@@ -7,72 +7,116 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   
   <title>Frontend Mentor | News homepage</title>
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/style.css">
 </head>
-<body class="">
-  <nav class="flex">
-    <img class="" src="./assets/images/logo.svg" alt="logo">
-    <div class="ml-auto">
-      <ul class=" flex space-x-4">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">News</a></li>
-        <li><a href="#">Popular</a></li>
-        <li><a href="#">Trending</a></li>
-        <li><a href="#">Categories</a></li>
-      </ul>
+<body class=" p-10">
+  <div class="p-5">
+    <header class="w-full h-16 mb-6 bg-white">
+      <div class="container px-4 md:px-0 h-full mx-auto flex items-center">
+          <!-- Logo Here -->
+          <img src="./assets/images/logo.svg" alt="logo">
+  
+          <!-- Menu links here -->
+          <ul id="menu" class="hidden fixed w-3/4 md:w-full top-0 right-0 px-10 space-y-4 py-16 bg-white z-50
+              md:relative md:flex md:justify-end md:p-0 md:bg-transparent md:flex-row md:space-x-6">
+  
+              <li class="md:hidden z-90 fixed top-4 right-6">
+                  <a href="javascript:void(0)" class="text-right text-4xl"
+                      onclick="toggleMenu()">&times;</a>
+              </li>
+  
+              <li>
+                <a class=" opacity-70 hover:text-Softred duration-300" href="#">Home</a>
+              </li>
+              <li>
+                  <a class="opacity-70 hover:text-Softred duration-300" href="#">New</a>
+              </li>
+              <li>
+                  <a class=" opacity-70 hover:text-Softred duration-300" href="#">Popular</a>
+              </li>
+  
+              <li>
+                  <a class=" opacity-70 hover:text-Softred duration-300" href="#">Trending</a>
+              </li>
+              <li>
+                  <a class=" opacity-70 hover:text-Softred duration-300" href="#">Categories</a>
+              </li>
+          </ul>
+  
+          <!-- This is used to open the menu on mobile devices -->
+          <div class="flex items-center md:hidden">
+              <button class="text-white text-4xl font-bold opacity-70 hover:opacity-100 duration-300"
+                  onclick="toggleMenu()">
+                  <img src="./assets/images/icon-menu.svg" alt="menu icon">
+              </button>
+          </div>
+  </header>
+    <div class="flex">
+      <section class="my-6">
+        <img class="hidden sm:block" src="./assets/images/image-web-3-desktop.jpg" alt="web3 image">
+        <img class="sm:hidden" src="./assets/images/image-web-3-mobile.jpg" alt="web3 image">
+        <div class="flex">
+          <div class="flex-1 w-full">
+            <h1 class=" font-inter text-7xl w-3/5 font-extrabold my-6">The Bright Future of Web 3.0?</h1>
+          </div>
+          <div class="flex flex-col justify-between mt-6 item content-between flex-1">
+            <p class=" font-inter text-xl font-normal tracking-wider w-2/3"> We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
+              But is it really fulfilling its promise?
+            </p>
+            <button class="hover:bg-Verydarkblue w-1/3 mb-6 bg-Softred transform transition py-2 px-4 text-Offwhite">READ MORE</button>
+          </div>
+        </div>
+      </section>
+      <section class="font-inter p-6 text-Offwhite my-6 ml-10 bg-Verydarkblue">
+        <h1 class=" mb-6 text-5xl text-Softorange font-extrabold">New</h1>
+        <h2 class=" mb-4 text-2xl font-bold">Hydrogen VS Electric Cars</h2>
+        <p class="text-xl mb-3 font-normal">Will hydrogen-fueled cars ever catch up to EVs?</p>
+        <hr class="my-6">
+        <h2 class=" mb-4 text-2xl font-bold">The Downsides of AI Artistry</h2>
+        <p class="text-xl mb-3 font-normal">What are the possible adverse effects of on-demand AI image generation?</p>
+        <hr class="my-6">
+        <h2 class="mb4 text-2xl font-bold">Is VC Funding Drying Up?</h2>
+        <p class="text-xl mb-3 font-normal">Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+      </section>
     </div>
-  </nav>
-  <div class="flex">
-    <section class="">
-      <img src="./assets/images/image-web-3-desktop.jpg" alt="web3 image">
-      <div class="flex">
-        <h1>The Bright Future of Web 3.0?</h1>
-        <div>
-          <p>  We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
-            But is it really fulfilling its promise?
-          </p>
-          <button>READ MORE</button>
+    <div class="flex font-inter">
+      <div class="flex mr-10">
+        <img class="mr-10 w-30 h-30 object-contain" src="./assets/images/image-retro-pcs.jpg" alt="Retro pcs">
+        <div class="space-y-5 ">
+          <h1 class="text-Grayishblue font-extrabold text-3xl">01</h1>
+          <h3 class="text-Verydarkblue text-2xl font-bold">Reviving Retro PCs</h3>
+          <p class="text-Grayishblue pr-4 font-normal text-xl">What happens when old PCs are given modern upgrades?</p>
         </div>
       </div>
-    </section>
-    <section>
-      <h1>New</h1>
-      <h2>Hydrogen VS Electric Cars</h2>
-      <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
-      <hr>
-      <h2>The Downsides of AI Artistry</h2>
-      <p>What are the possible adverse effects of on-demand AI image generation?</p>
-      <hr>
-      <h2>Is VC Funding Drying Up?</h2>
-      <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
-    </section>
-  </div>
-  <div class="flex">
-    <div class="flex-1">
-      <img class="float-left" src="./assets/images/image-retro-pcs.jpg" alt="Retro pcs">
-      <div class="">
-        <h1>01</h1>
-        <h3>Reviving Retro PCs</h3>
-        <p>What happens when old PCs are given modern upgrades?</p>
+      <div class="flex mr-10 ">
+        <img class="mr-10 w-15 object-contain" src="./assets/images/image-top-laptops.jpg" alt="image of keyboard">
+        <div class="space-y-5">
+          <h1 class="text-Grayishblue font-extrabold text-3xl">02</h1>
+          <h3 class="text-Verydarkblue text-2xl font-bold">Top 10 Laptops of 2022</h3>
+          <p class="text-Grayishblue pr-4 font-normal text-xl">Our best picks for various needs and budgets.</p>
+        </div>
       </div>
-    </div>
-    <div class="flex-1">
-      <img class="float-left" src="./assets/images/image-top-laptops.jpg" alt="image of keyboard">
-      <div>
-        <h1>02</h1>
-        <h3>Top 10 Laptops of 2022</h3>
-        <p>Our best picks for various needs and budgets.</p>
-      </div>
-    </div>
-    <div class="flex-1">
-      <img class="float-left" src="./assets/images/image-gaming-growth.jpg" alt=" gaming pad">
-      <div class="">
-        <h1>03</h1>
-        <h3>he Growth of Gaming</h3>
-        <p>How the pandemic has sparked fresh opportunities.</p>
+      <div class="flex">
+        <img class="mr-10 w-15 object-contain" src="./assets/images/image-gaming-growth.jpg" alt=" gaming pad">
+        <div class="space-y-5">
+          <h1 class="text-Grayishblue font-extrabold text-3xl">03</h1>
+          <h3 class="text-Verydarkblue text-2xl font-bold">The Growth of Gaming</h3>
+          <p class="text-Grayishblue pr-4 font-normal text-xl">How the pandemic has sparked fresh opportunities.</p>
+        </div>
       </div>
     </div>
   </div>
+
+  <script>
+    var menu = document.getElementById('menu');
+    function toggleMenu() {
+        menu.classList.toggle('hidden');
+        menu.classList.toggle('w-full');
+        menu.classList.toggle('h-screen');
+    }
+</script>
 </body>
 </html>
