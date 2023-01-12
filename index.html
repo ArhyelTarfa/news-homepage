@@ -12,10 +12,9 @@
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/style.css">
 </head>
-<body class=" p-10">
-  <div class="p-5">
+<body class=" max-w-xs sm:max-w-lg lg:max-w-6xl  mx-auto mt-10">
     <header class="w-full h-16 mb-6 bg-white">
-      <div class="container px-4 md:px-0 h-full mx-auto flex items-center">
+      <div class="container px-4 md:px-0 h-full justify-between mx-auto flex items-center">
           <!-- Logo Here -->
           <img src="./assets/images/logo.svg" alt="logo">
   
@@ -47,69 +46,74 @@
           </ul>
   
           <!-- This is used to open the menu on mobile devices -->
-          <div class="flex items-center md:hidden">
+          <div class="flex items-center justify-items-center md:hidden">
               <button class="text-white text-4xl font-bold opacity-70 hover:opacity-100 duration-300"
                   onclick="toggleMenu()">
                   <img src="./assets/images/icon-menu.svg" alt="menu icon">
               </button>
           </div>
-  </header>
-    <div class="flex">
-      <section class="my-6">
-        <img class="hidden sm:block" src="./assets/images/image-web-3-desktop.jpg" alt="web3 image">
-        <img class="sm:hidden" src="./assets/images/image-web-3-mobile.jpg" alt="web3 image">
-        <div class="flex">
-          <div class="flex-1 w-full">
-            <h1 class=" font-inter text-7xl w-3/5 font-extrabold my-6">The Bright Future of Web 3.0?</h1>
+        </div>
+    </header>
+    <div class="space-y-5 lg:space-y-0 lg:flex">
+      <section class=" font-inter">
+        <img class="hidden lg:block" src="./assets/images/image-web-3-desktop.jpg" alt="web3 image">
+        <img class="block lg:hidden" src="./assets/images/image-web-3-mobile.jpg" alt="web3 image">
+        <div class=" space-y-5 lg:mt-5 lg:flex ">
+          <div class="flex-1 my-auto ">
+            <h1 class=" w-full sm:w-5/6 font-inter mt-5 lg:w-full lg:mt-auto text-6xl font-bold ">The Bright Future of Web 3.0?</h1>
           </div>
-          <div class="flex flex-col justify-between mt-6 item content-between flex-1">
-            <p class=" font-inter text-xl font-normal tracking-wider w-2/3"> We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
+          <div class=" flex flex-col justify-between flex-1">
+            <p class=" font-inter text-base font-normal tracking-wider "> We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
               But is it really fulfilling its promise?
             </p>
-            <button class="hover:bg-Verydarkblue w-1/3 mb-6 bg-Softred transform transition py-2 px-4 text-Offwhite">READ MORE</button>
+            <button class="hover:bg-Verydarkblue w-2/3 sm:w-1/3 lg:w-2/3 mt-6  bg-Softred transform font-bold transition  tracking-wide py-3 px-5 text-Offwhite">READ MORE</button>
           </div>
         </div>
       </section>
-      <section class="font-inter p-6 text-Offwhite my-6 ml-10 bg-Verydarkblue">
+      <section class="font-inter p-6  text-Offwhite lg:ml-10 w-full bg-Verydarkblue">
         <h1 class=" mb-6 text-5xl text-Softorange font-extrabold">New</h1>
-        <h2 class=" mb-4 text-2xl font-bold">Hydrogen VS Electric Cars</h2>
-        <p class="text-xl mb-3 font-normal">Will hydrogen-fueled cars ever catch up to EVs?</p>
+        <h2 class=" mb-4 text-xl font-bold">Hydrogen VS Electric Cars</h2>
+        <p class="text-base mb-3 text-Offwhite font-normal">Will hydrogen-fueled cars ever catch up to EVs?</p>
         <hr class="my-6">
-        <h2 class=" mb-4 text-2xl font-bold">The Downsides of AI Artistry</h2>
-        <p class="text-xl mb-3 font-normal">What are the possible adverse effects of on-demand AI image generation?</p>
+        <h2 class=" mb-4 text-xl font-bold">The Downsides of AI Artistry</h2>
+        <p class="text-base mb-3 text-Offwhite  font-normal">What are the possible adverse effects of on-demand AI image generation?</p>
         <hr class="my-6">
-        <h2 class="mb4 text-2xl font-bold">Is VC Funding Drying Up?</h2>
-        <p class="text-xl mb-3 font-normal">Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+        <h2 class="mb4 text-xl font-bold">Is VC Funding Drying Up?</h2>
+        <p class="text-base mt-3 text-Offwhite font-normal">Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
       </section>
     </div>
-    <div class="flex font-inter">
-      <div class="flex mr-10">
-        <img class="mr-10 w-30 h-30 object-contain" src="./assets/images/image-retro-pcs.jpg" alt="Retro pcs">
-        <div class="space-y-5 ">
-          <h1 class="text-Grayishblue font-extrabold text-3xl">01</h1>
-          <h3 class="text-Verydarkblue text-2xl font-bold">Reviving Retro PCs</h3>
-          <p class="text-Grayishblue pr-4 font-normal text-xl">What happens when old PCs are given modern upgrades?</p>
+    <div class="flex flex-col lg:flex-row space-y-5 lg:space-y-0 h-30 my-10 font-inter">
+      <div class="flex"> 
+        <div class=" relative ">
+          <img class=" " src="./assets/images/image-retro-pcs.jpg" alt="Retro pcs">
         </div>
-      </div>
-      <div class="flex mr-10 ">
-        <img class="mr-10 w-15 object-contain" src="./assets/images/image-top-laptops.jpg" alt="image of keyboard">
-        <div class="space-y-5">
-          <h1 class="text-Grayishblue font-extrabold text-3xl">02</h1>
-          <h3 class="text-Verydarkblue text-2xl font-bold">Top 10 Laptops of 2022</h3>
-          <p class="text-Grayishblue pr-4 font-normal text-xl">Our best picks for various needs and budgets.</p>
+        <div class="ml-5 space-y-3 ">
+          <h1 class="text-Grayishblue font-extrabold text-xl">01</h1>
+          <a class="text-Verydarkblue text-lg font-bold hover:text-Softred ">Reviving Retro PCs</a>
+          <p class="text-Grayishblue  font-normal text-base">What happens when old PCs are given modern upgrades?</p>
         </div>
       </div>
       <div class="flex">
-        <img class="mr-10 w-15 object-contain" src="./assets/images/image-gaming-growth.jpg" alt=" gaming pad">
-        <div class="space-y-5">
-          <h1 class="text-Grayishblue font-extrabold text-3xl">03</h1>
-          <h3 class="text-Verydarkblue text-2xl font-bold">The Growth of Gaming</h3>
-          <p class="text-Grayishblue pr-4 font-normal text-xl">How the pandemic has sparked fresh opportunities.</p>
+        <div class=" relative">
+          <img class="" src="./assets/images/image-top-laptops.jpg" alt="image of keyboard">
+        </div>
+        <div class="ml-5 space-y-3">
+          <h1 class="text-Grayishblue font-extrabold text-xl">02</h1>
+          <a class="text-Verydarkblue text-lg font-bold hover:text-Softred ">Top 10 Laptops of 2022</a>
+          <p class="text-Grayishblue  font-normal text-base">Our best picks for various needs and budgets.</p>
+        </div>
+      </div>
+      <div class="flex">
+        <div class="relative  ">
+          <img class="" src="./assets/images/image-gaming-growth.jpg" alt=" gaming pad">
+        </div>
+        <div class="ml-5 space-y-3">
+          <h1 class="text-Grayishblue font-extrabold text-xl">03</h1>
+          <a class="text-Verydarkblue text-lg font-bold hover:text-Softred ">The Growth of Gaming</a>
+          <p class="text-Grayishblue font-normal text-base">How the pandemic has sparked fresh opportunities.</p>
         </div>
       </div>
     </div>
-  </div>
-
   <script>
     var menu = document.getElementById('menu');
     function toggleMenu() {
